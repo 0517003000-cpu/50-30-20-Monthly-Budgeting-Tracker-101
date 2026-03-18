@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>50-30-20 Monthly Budgeting Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">50-30-20 Monthly Budgeting Tracker</h1>
+    
+    <!-- Language toggle -->
+    <div class="language-toggle">
+      <label><input type="radio" name="lang" value="en" checked> English</label>
+      <label><input type="radio" name="lang" value="id"> Bahasa Indonesia</label>
+    </div>
+
+    <!-- Inputs -->
+    <div class="inputs">
+      <label id="incomeLabel">Monthly Income:</label>
+      <input type="number" id="income" placeholder="e.g., 5000000">
+
+      <label id="needsLabel">Essential Expenses (Needs):</label>
+      <input type="number" id="needs" placeholder="e.g., 2000000">
+
+      <label id="wantsLabel">Non-Essential Expenses (Wants):</label>
+      <input type="number" id="wants" placeholder="e.g., 1000000">
+
+      <label id="savingsLabel">Savings:</label>
+      <input type="number" id="savings" placeholder="e.g., 2000000">
+
+      <label id="notesLabel">Notes (optional):</label>
+      <textarea id="notes" placeholder="e.g., I borrowed money from savings"></textarea>
+    </div>
+
+    <!-- Result -->
+    <div class="results">
+      <h2 id="resultTitle">Budget Advice:</h2>
+      <p id="result">Enter your details above to get advice.</p>
+    </div>
+
+    <div class="link">
+      <a id="calculatorLink" href="https://0517003000-cpu.github.io/50-30-20-Monthly-Budget-Calculator/" target="_blank">Open Budget Calculator</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
